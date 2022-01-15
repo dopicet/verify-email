@@ -10,8 +10,8 @@ def send_code():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('yash2003bisht@gmail.com', 'tara@bisht98211')
-    server.sendmail('yash2003bisht@gmail.com', email, f"Subject: Verify Your Email\n\n{code}")
+    server.login('Your email', 'password')
+    server.sendmail('Your email', email, f"Subject: Verify Your Email\n\n{code}")
     server.close()
 
 try:
